@@ -1,0 +1,103 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+:root {
+	--header-height: 46.5px;
+}
+
+@font-face {
+	font-family: lato;
+	src: url(../fonts/Lato-Regular.ttf);
+}
+
+#main {
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: var(--header-height);
+	background-color: #000;
+}
+
+#header a{
+	padding: 0 24px;
+}
+
+#main-menu {
+	display: inline-block;
+}
+
+#main-menu li {
+	position: relative;
+	display: inherit;
+}
+
+#main-menu li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: var(--header-height);
+}
+
+#main-menu>li:hover>a {
+	color: #000;
+	background-color: #ccc;
+}
+
+#main-menu li:hover .sub-menu {
+	display: block;
+}
+
+#main-menu .sub-menu {
+	min-width: 160px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+	display: none;
+}
+
+#main-menu .sub-menu li {
+	width: 100%;
+}
+
+#main-menu .sub-menu a {
+	padding: 0 16px;
+	text-transform: capitalize;
+	color: #000;
+	line-height: 38px;
+	background-color: #fff;
+}
+
+#main-menu .sub-menu a:hover {
+	background-color: #ccc;
+}
+
+#search-icon {
+	line-height: var(--header-height);
+	float: right;
+	color: #fff;
+}
+
+#search-icon:hover {
+	background-color: #f44336;
+}
+
+#slider {
+	margin-top: var(--header-height);
+	background-color: #333;
+	height: calc(100vh - var(--header-height));
+}
+
+#content {
+}
+
+#footer {
+}
