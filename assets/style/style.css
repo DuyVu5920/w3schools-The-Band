@@ -142,22 +142,42 @@ p {
 }
 
 #content .content-section {
-	margin: auto;
+	margin: 0 auto;
 	max-width: 800px;
 	padding: 64px 16px;
 }
 
-.content-section .content-heading {
+#content .content-heading {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 }
 
-.content-section .content-sub-heading {
+#content .content-sub-heading {
 	opacity: 0.6;
 }
 
-#band-text {
+#band-section .band-text {
 	text-align: justify;
+}
+
+#band-section .member-list {
+	padding: 32px 0;
+}
+
+#band-section .member-list::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#band-section .member {
+	width: calc(100% / 3);
+	float: left;
+}
+
+#band-section .member-img {
+	width: 60%;
+	margin-bottom: 16px;
 }
 
 #tour-section {
