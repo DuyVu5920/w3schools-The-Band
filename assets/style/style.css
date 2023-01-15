@@ -2,7 +2,26 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Lato", sans-serif;
+	font-family: lato;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+p {
+	margin: 1em 0;
 }
 
 :root {
@@ -25,7 +44,7 @@
 	background-color: #000;
 }
 
-#header a{
+#header a {
 	padding: 0 24px;
 }
 
@@ -46,7 +65,7 @@
 	line-height: var(--header-height);
 }
 
-#main-menu>li:hover>a {
+#main-menu > li:hover > a {
 	color: #000;
 	background-color: #ccc;
 }
@@ -92,8 +111,24 @@
 
 #slider {
 	margin-top: var(--header-height);
-	background-color: #333;
-	height: calc(100vh - var(--header-height));
+}
+
+#slider .mySlides {
+	text-align: center;
+	position: relative;
+}
+
+#slider img {
+	width: 100%;
+}
+
+#slider .imgDescription {
+	position: absolute;
+	padding: 32px 16px;
+	color: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 10%;
 }
 
 #content {

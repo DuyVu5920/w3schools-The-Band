@@ -28,9 +28,50 @@
                 <i class="fa fa-search"></i>
             </a>
         </div>
-        <div id="slider"></div>
+        <div id="slider">
+            <div class="mySlides">
+                <img src="./assets/img/chicago.jpg" alt="">
+                <div class="imgDescription">
+                    <h3>Chicago</h3>
+                    <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <img src="./assets/img/la.jpg" alt="">
+                <div class="imgDescription">
+                    <h3>Los Angeles</h3>
+                    <p><b>We had the best time playing at Venice Beach!</b></p>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <img src="./assets/img/ny.jpg" alt="">
+                <div class="imgDescription">
+                    <h3>New York</h3>
+                    <p><b>The atmosphere in New York is fantastic!</b></p>
+                </div>
+            </div>
+
+        </div>
         <div id="content"></div>
         <div id="footer"></div>
     </div>
+    <script>
+        var slideIndex = 0;
+        autoSlider();
+
+        function autoSlider() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(autoSlider, 3000);
+        }
+    </script>
 </body>
 </html>
