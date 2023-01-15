@@ -3,6 +3,8 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: lato;
+	font-size: 15px;
+	line-height: 1.5;
 }
 
 h1,
@@ -14,6 +16,10 @@ h6 {
 	font-family: "Segoe UI", Arial, sans-serif;
 	font-weight: 400;
 	margin: 10px 0;
+}
+
+h2 {
+	font-size: 30px;
 }
 
 h3 {
@@ -42,6 +48,7 @@ p {
 	width: 100%;
 	height: var(--header-height);
 	background-color: #000;
+	z-index: 1;
 }
 
 #header a {
@@ -122,16 +129,45 @@ p {
 	width: 100%;
 }
 
-#slider .imgDescription {
+#slider .slide-description {
 	position: absolute;
 	padding: 32px 16px;
 	color: #fff;
-	left: 50%;
-	transform: translateX(-50%);
+	width: 100%;
 	bottom: 10%;
 }
 
 #content {
+	text-align: center;
+}
+
+#content .content-section {
+	margin: auto;
+	max-width: 800px;
+	padding: 64px 16px;
+}
+
+.content-section .content-heading {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.content-section .content-sub-heading {
+	opacity: 0.6;
+}
+
+#band-text {
+	text-align: justify;
+}
+
+#tour-section {
+	color: #fff;
+	background-color: #000;
+}
+
+#map {
+	width: 100%;
+	filter: grayscale(60%);
 }
 
 #footer {
