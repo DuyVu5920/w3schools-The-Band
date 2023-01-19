@@ -24,7 +24,7 @@
                     </ul>
                 </li>
             </ul>
-            <a id="search-icon" href="">
+            <a id="search-icon" class="float-right" href="">
                 <i class="fa fa-search"></i>
             </a>
         </div>
@@ -93,7 +93,7 @@
                     <ul class="month-list">
                         <li>September <span class="sold-out inline-block">Sold out</span></li>
                         <li>October <span class="sold-out inline-block">Sold out</span></li>
-                        <li>November <span class="concert-count inline-block">3</span></li>
+                        <li>November <span class="concert-count inline-block float-right">3</span></li>
                     </ul>
                     <div class="concert-list clearfix">
                         <div class="concert colx3">
@@ -104,7 +104,7 @@
                                 <p class="concert-description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="booking-btn">Buy Tickets</button>
+                                <button class="booking-btn" onclick="openModal()">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -116,7 +116,7 @@
                                 <p class="concert-description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="booking-btn">Buy Tickets</button>
+                                <button class="booking-btn" onclick="openModal()">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -128,14 +128,34 @@
                                 <p class="concert-description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="booking-btn">Buy Tickets</button>
+                                <button class="booking-btn" onclick="openModal()">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="booking-modal">
-
+                <div class="modal-container">
+                    <div class="modal-header text-center">
+                        <button class="close-modal-btn-top" onclick="closeModal()">
+                            <i class="fa fa-power-off"></i>
+                        </button>
+                        <h2><i class="fa fa-suitcase"></i> Booking</h2>
+                    </div>
+                    <div class="modal-content">
+                        <p><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</p>
+                        <input type="text" placeholder="How many?">
+                        <p><i class="fa fa-user"></i> Send To</p>
+                        <input type="text" placeholder="Enter email">
+                        <button class="pay-btn w-100">
+                            PAY <i class="fa fa-check"></i>
+                        </button>
+                        <button class="close-modal-btn-bottom" onclick="closeModal()">
+                            Close <i class="fa fa-close"></i>
+                        </button>
+                        <p class="float-right">Need <a href="#" class="help-link">help?</a></p>
+                    </div>
+                </div>
             </div>
             <div id="contact-section" class="content-section">
                 <h2 class="content-heading text-center">Contact</h2>
@@ -162,7 +182,7 @@
                                 </div>
                             </div>
                             <input type="text" placeholder="Message" required="" name="Message">
-                            <button class="send-btn" type="submit">send</button>
+                            <button class="send-btn float-right" type="submit">send</button>
                         </form>
                     </div>
                 </div>
@@ -176,8 +196,9 @@
             <i class="fa fa-pinterest-p opacity-hover"></i>
             <i class="fa fa-twitter opacity-hover"></i>
             <i class="fa fa-linkedin opacity-hover"></i>
-            <p>Original design by <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm">w3schools</a></p>
-            <p class="credit">Replicated by <a href="https://github.com/DuyVu5920" target="_blank">DuyVu5920</a></p>
+            <p>Original design by <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm">w3schools</a>
+            </p>
+            <p>Replicated by <a href="https://github.com/DuyVu5920" target="_blank">DuyVu5920</a></p>
         </div>
     </div>
     <script src="./assets/script/script.js"></script>

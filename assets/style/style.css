@@ -69,6 +69,10 @@ input {
 	text-align: center;
 }
 
+.float-right {
+	float: right;
+}
+
 .colx2 {
 	float: left;
 	width: 50%;
@@ -156,7 +160,6 @@ input {
 
 #search-icon {
 	line-height: var(--header-height);
-	float: right;
 	color: #fff;
 }
 
@@ -234,7 +237,6 @@ input {
 }
 
 #tour-section .concert-count {
-	float: right;
 	margin-right: 16px;
 	border-radius: 50%;
 	background-color: #000;
@@ -269,6 +271,71 @@ input {
 	margin-bottom: 16px;
 }
 
+#booking-modal {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#booking-modal .modal-container {
+	position: absolute;
+	width: 700px;
+	height: fit-content;
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+	background-color: #fff;
+}
+
+#booking-modal .modal-header {
+	font-size: 30px;
+	color: #fff;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	padding: 32px 16px;
+	background-color: #009688;
+}
+
+#booking-modal .modal-content {
+	padding: 0 16px;
+}
+
+#booking-modal .close-modal-btn-top {
+	color: #ccc;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 24px;
+	background-color: #009688;
+}
+
+#booking-modal .close-modal-btn-top:hover {
+	color: #fff !important;
+	background-color: #009688 !important;
+}
+
+#booking-modal .pay-btn {
+	padding: 16px;
+	margin: 16px 0;
+	background-color: #009688;
+}
+
+#booking-modal .close-modal-btn-bottom {
+	margin-bottom: 16px;
+	background-color: #f44336;
+}
+
+#booking-modal .help-link {
+	color: #2196f3;
+}
+
 #contact-section .contact-form {
 	padding: 32px 0;
 }
@@ -278,7 +345,7 @@ input {
 	margin-bottom: 16px;
 }
 
-#contact-section .contact-detail .fa{
+#contact-section .contact-detail .fa {
 	width: 30px;
 }
 
@@ -287,14 +354,13 @@ input {
 	margin-bottom: 8px;
 }
 
-#contact-section .info-input>div {
+#contact-section .info-input > div {
 	padding: 0 8px;
 }
 
 #contact-section .send-btn {
 	background-color: #000;
 	text-transform: uppercase;
-	float: right;
 	margin: 16px 0;
 }
 
@@ -306,4 +372,23 @@ input {
 	background-color: #f1f1f1;
 	padding: 64px 16px;
 	font-size: 24px;
+}
+
+@media screen and (max-width: 993px) {
+	#booking-modal .modal-container {
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#booking-modal .modal-container {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#booking-modal .modal-container {
+		margin: 0 12px;
+		width: auto;
+	}
 }

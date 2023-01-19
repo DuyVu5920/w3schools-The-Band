@@ -1,5 +1,6 @@
 var slideIndex = 0;
 autoSlider();
+var modal = document.getElementById("booking-modal");
 
 function autoSlider() {
 	var i;
@@ -14,3 +15,17 @@ function autoSlider() {
 	slides[slideIndex - 1].style.display = "block";
 	setTimeout(autoSlider, 3000);
 }
+
+function openModal() {
+	modal.style.display = "block";
+}
+
+function closeModal() {
+	modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+	if (event.target == modal) {
+		closeModal();
+	}
+};
