@@ -27,7 +27,25 @@ h3 {
 }
 
 p {
-	margin: 1em 0;
+	margin: 15px 0;
+}
+
+button {
+	color: #fff;
+	padding: 8px 16px;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #000 !important;
+	background-color: #ccc !important;
+}
+
+input {
+	padding: 8px;
+	border: 1px solid #ccc;
+	width: 100%;
 }
 
 :root {
@@ -39,13 +57,48 @@ p {
 	src: url(../fonts/Lato-Regular.ttf);
 }
 
+.w-100 {
+	width: 100%;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.colx2 {
+	float: left;
+	width: 50%;
+}
+
+.colx3 {
+	float: left;
+	width: calc(100% / 3);
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.opacity {
+	opacity: 0.6;
+}
+
+.opacity-hover:hover {
+	opacity: 0.6;
+}
+
 #main {
 }
 
 #header {
 	position: fixed;
 	top: 0;
-	width: 100%;
 	height: var(--header-height);
 	background-color: #000;
 	z-index: 1;
@@ -56,7 +109,6 @@ p {
 }
 
 #main-menu {
-	display: inline-block;
 }
 
 #main-menu li {
@@ -65,8 +117,8 @@ p {
 }
 
 #main-menu li a {
-	display: block;
 	color: #fff;
+	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
 	line-height: var(--header-height);
@@ -88,10 +140,6 @@ p {
 	left: 0;
 	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
 	display: none;
-}
-
-#main-menu .sub-menu li {
-	width: 100%;
 }
 
 #main-menu .sub-menu a {
@@ -120,25 +168,18 @@ p {
 	margin-top: var(--header-height);
 }
 
-#slider .mySlides {
-	text-align: center;
+#slider .slides {
 	position: relative;
-}
-
-#slider img {
-	width: 100%;
 }
 
 #slider .slide-description {
 	position: absolute;
 	padding: 32px 16px;
 	color: #fff;
-	width: 100%;
 	bottom: 10%;
 }
 
 #content {
-	text-align: center;
 }
 
 #content .content-section {
@@ -152,27 +193,12 @@ p {
 	letter-spacing: 4px;
 }
 
-#content .content-sub-heading {
-	opacity: 0.6;
-}
-
 #band-section .band-text {
 	text-align: justify;
 }
 
 #band-section .member-list {
 	padding: 32px 0;
-}
-
-#band-section .member-list::after{
-	content: "";
-	clear: both;
-	display: block;
-}
-
-#band-section .member {
-	width: calc(100% / 3);
-	float: left;
 }
 
 #band-section .member-img {
@@ -185,10 +211,99 @@ p {
 	background-color: #000;
 }
 
+#tour-section .month-list {
+	background-color: #fff;
+	list-style-type: none;
+	color: #757575;
+	margin-top: 40px;
+}
+
+#tour-section .month-list li {
+	padding: 8px 16px;
+	border-bottom: 1px solid #ddd;
+}
+
+#tour-section .month-list span {
+	padding: 0 8px;
+	color: #fff;
+}
+
+#tour-section .sold-out {
+	margin-left: 16px;
+	background-color: #f44336;
+}
+
+#tour-section .concert-count {
+	float: right;
+	margin-right: 16px;
+	border-radius: 50%;
+	background-color: #000;
+}
+
+#tour-section .concert-list {
+	padding: 32px 0;
+	margin: 0 -8px;
+}
+
+#tour-section .concert {
+	padding: 0 8px;
+	margin-bottom: 16px;
+	color: #000;
+}
+
+#tour-section .city-img {
+	display: block;
+}
+
+#tour-section .concert-detail {
+	background-color: #fff;
+	padding: 0 16px;
+}
+
+#tour-section .concert-date {
+	color: #757575;
+}
+
+#tour-section .booking-btn {
+	background-color: #000;
+	margin-bottom: 16px;
+}
+
+#contact-section .contact-form {
+	padding: 32px 0;
+}
+
+#contact-section .contact-detail {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+#contact-section .contact-detail .fa{
+	width: 30px;
+}
+
+#contact-section .info-input {
+	margin: 0px -8px;
+	margin-bottom: 8px;
+}
+
+#contact-section .info-input>div {
+	padding: 0 8px;
+}
+
+#contact-section .send-btn {
+	background-color: #000;
+	text-transform: uppercase;
+	float: right;
+	margin: 16px 0;
+}
+
 #map {
-	width: 100%;
 	filter: grayscale(60%);
 }
 
 #footer {
+	background-color: #f1f1f1;
+	padding: 64px 16px;
+	font-size: 24px;
 }
