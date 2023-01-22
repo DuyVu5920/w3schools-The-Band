@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="main">
-        <div id="header" class="w-100">
-            <ul id="main-menu" class="inline-block">
-                <li><a href="">home</a></li>
-                <li><a href="#band-section">band</a></li>
-                <li><a href="#tour-section">tour</a></li>
-                <li><a href="#contact-section">contact</a></li>
-                <li><a href="">more <i class="fa fa-caret-down"></i></a>
-                    <ul class="sub-menu">
-                        <li class="w-100"><a href="">merchandise</a></li>
-                        <li class="w-100"><a href="">extras</a></li>
-                        <li class="w-100"><a href="">media</a></li>
+        <div id="header" class="w-100 bg-black">
+            <ul id="main-menu" class="inline-block uppercase">
+                <li><a class= "text-white block" href="">home</a></li>
+                <li><a class= "text-white block" href="#band-section">band</a></li>
+                <li><a class= "text-white block" href="#tour-section">tour</a></li>
+                <li><a class= "text-white block" href="#contact-section">contact</a></li>
+                <li><a class= "text-white block" href="">more <i class="fa fa-caret-down"></i></a>
+                    <ul class="sub-menu bg-white shadow">
+                        <li class="w-100"><a class="block text-black" href="">merchandise</a></li>
+                        <li class="w-100"><a class="block text-black" href="">extras</a></li>
+                        <li class="w-100"><a class="block text-black" href="">media</a></li>
                     </ul>
                 </li>
             </ul>
-            <a id="search-icon" class="float-right" href="">
+            <a id="search-icon" class="float-right text-white" href="">
                 <i class="fa fa-search"></i>
             </a>
         </div>
         <div id="slider">
             <div class="slides text-center">
                 <img class="w-100" src="./assets/img/chicago.jpg" alt="">
-                <div class="slide-description w-100">
+                <div class="slide-description w-100 text-white">
                     <h3>Chicago</h3>
                     <p><b>Thank you, Chicago - A night we won't forget.</b></p>
                 </div>
@@ -39,7 +40,7 @@
 
             <div class="slides text-center">
                 <img class="w-100" src="./assets/img/la.jpg" alt="">
-                <div class="slide-description w-100">
+                <div class="slide-description w-100 text-white">
                     <h3>Los Angeles</h3>
                     <p><b>We had the best time playing at Venice Beach!</b></p>
                 </div>
@@ -47,7 +48,7 @@
 
             <div class="slides text-center">
                 <img class="w-100" src="./assets/img/ny.jpg" alt="">
-                <div class="slide-description w-100">
+                <div class="slide-description w-100 text-white">
                     <h3>New York</h3>
                     <p><b>The atmosphere in New York is fantastic!</b></p>
                 </div>
@@ -56,7 +57,7 @@
         </div>
         <div id="content">
             <div id="band-section" class="content-section">
-                <h2 class="content-heading text-center">The Band</h2>
+                <h2 class="content-heading uppercase text-wide text-center">The Band</h2>
                 <p class="opacity text-center"><i>We love music!</i></p>
                 <p class="band-text">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -68,87 +69,87 @@
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.
                 </p>
-                <div class="member-list clearfix text-center">
-                    <div class="member colx3">
+                <div class="member-list row text-center">
+                    <div class="member col colx3">
                         <p class="member-name">Name</p>
-                        <img class="member-img" src="./assets/img/bandmember.jpg" alt="">
+                        <img class="member-img block" src="./assets/img/bandmember.jpg" alt="">
                     </div>
 
-                    <div class="member colx3">
+                    <div class="member col colx3">
                         <p class="member-name">Name</p>
-                        <img class="member-img" src="./assets/img/bandmember.jpg" alt="">
+                        <img class="member-img block" src="./assets/img/bandmember.jpg" alt="">
                     </div>
 
-                    <div class="member colx3">
+                    <div class="member col colx3">
                         <p class="member-name">Name</p>
-                        <img class="member-img" src="./assets/img/bandmember.jpg" alt="">
+                        <img class="member-img block" src="./assets/img/bandmember.jpg" alt="">
                     </div>
 
                 </div>
             </div>
-            <div id="tour-section">
+            <div id="tour-section" class="text-white bg-black">
                 <div class="content-section">
-                    <h2 class="content-heading text-center">Tour Dates</h2>
+                    <h2 class="content-heading uppercase text-wide text-center">Tour Dates</h2>
                     <p class="opacity text-center"><i>Remember to book your tickets!</i></p>
-                    <ul class="month-list">
-                        <li>September <span class="sold-out inline-block">Sold out</span></li>
-                        <li>October <span class="sold-out inline-block">Sold out</span></li>
-                        <li>November <span class="concert-count inline-block float-right">3</span></li>
+                    <ul class="month-list bg-white">
+                        <li>September <span class="sold-out inline-block text-white">Sold out</span></li>
+                        <li>October <span class="sold-out inline-block text-white">Sold out</span></li>
+                        <li>November <span class="concert-count inline-block text-white float-right bg-black">3</span></li>
                     </ul>
-                    <div class="concert-list clearfix">
-                        <div class="concert colx3">
-                            <img class="city-img opacity-hover w-100" src="./assets/img/newyork.jpg" alt="">
-                            <div class="concert-detail inline-block">
+                    <div class="concert-list row">
+                        <div class="concert text-black col colx3">
+                            <img class="city-img opacity-hover w-100 block" src="./assets/img/newyork.jpg" alt="">
+                            <div class="concert-detail bg-white inline-block">
                                 <p class="city-name"><b>New York</b></p>
                                 <p class="concert-date">Fri 27 Nov 2016</p>
                                 <p class="concert-description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="booking-btn" onclick="openModal()">Buy Tickets</button>
+                                <button class="bg-black block" onclick="openModal()">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="concert colx3">
-                            <img class="city-img opacity-hover w-100" src="./assets/img/paris.jpg" alt="">
-                            <div class="concert-detail inline-block">
+                        <div class="concert text-black col colx3">
+                            <img class="city-img opacity-hover w-100 block" src="./assets/img/paris.jpg" alt="">
+                            <div class="concert-detail bg-white inline-block">
                                 <p class="city-name"><b>Paris</b></p>
                                 <p class="concert-date">Sat 28 Nov 2016</p>
                                 <p class="concert-description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="booking-btn" onclick="openModal()">Buy Tickets</button>
+                                <button class="bg-black block" onclick="openModal()">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="concert colx3">
-                            <img class="city-img opacity-hover w-100" src="./assets/img/sanfran.jpg" alt="">
-                            <div class="concert-detail inline-block">
+                        <div class="concert text-black col colx3">
+                            <img class="city-img opacity-hover w-100 block" src="./assets/img/sanfran.jpg" alt="">
+                            <div class="concert-detail bg-white inline-block">
                                 <p class="city-name"><b>San Francisco</b></p>
                                 <p class="concert-date">Sun 29 Nov 2016</p>
                                 <p class="concert-description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="booking-btn" onclick="openModal()">Buy Tickets</button>
+                                <button class="bg-black block" onclick="openModal()">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="booking-modal">
-                <div class="modal-container">
-                    <div class="modal-header text-center">
-                        <button class="close-modal-btn-top" onclick="closeModal()">
+                <div class="modal-container bg-white shadow">
+                    <div class="modal-header text-center text-white bg-teal text-wide uppercase">
+                        <button class="close-modal-btn-top bg-teal" onclick="closeModal()">
                             <i class="fa fa-power-off"></i>
                         </button>
                         <h2><i class="fa fa-suitcase"></i> Booking</h2>
                     </div>
                     <div class="modal-content">
                         <p><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</p>
-                        <input type="text" placeholder="How many?">
+                        <input type="number" placeholder="How many?">
                         <p><i class="fa fa-user"></i> Send To</p>
-                        <input type="text" placeholder="Enter email">
-                        <button class="pay-btn w-100">
-                            PAY <i class="fa fa-check"></i>
+                        <input type="email" placeholder="Enter email">
+                        <button class="pay-btn w-100 bg-teal uppercase">
+                            Pay <i class="fa fa-check"></i>
                         </button>
                         <button class="close-modal-btn-bottom" onclick="closeModal()">
                             Close <i class="fa fa-close"></i>
@@ -158,31 +159,31 @@
                 </div>
             </div>
             <div id="contact-section" class="content-section">
-                <h2 class="content-heading text-center">Contact</h2>
+                <h2 class="content-heading uppercase text-wide text-center">Contact</h2>
                 <p class="opacity text-center"><i>Fan? Drop a note!</i></p>
-                <div class="contact-form clearfix">
-                    <div class="contact-detail colx2">
+                <div class="contact-form row">
+                    <div class="contact-detail col colx2">
                         <i class="fa fa-map-marker"></i>
-                        Chicago, US
+                        Hanoi, VN
                         <br>
                         <i class="fa fa-phone"></i>
-                        Phone: 123456789
+                        Phone: 0969508526
                         <br>
                         <i class="fa fa-envelope"></i>
-                        Email: abc@mail.com
+                        Email: vduy5920@gmail.com
                     </div>
-                    <div class="contact-submit colx2">
+                    <div class="contact-submit col colx2">
                         <form action="" target="_blank">
-                            <div class="info-input clearfix">
-                                <div class="name-input colx2">
+                            <div class="info-input row">
+                                <div class="name-input col colx2">
                                     <input type="text" placeholder="Name" required="" name="Name">
                                 </div>
-                                <div class="email-input colx2">
+                                <div class="email-input col colx2">
                                     <input type="text" placeholder="Email" required="" name="Email">
                                 </div>
                             </div>
                             <input type="text" placeholder="Message" required="" name="Message">
-                            <button class="send-btn float-right" type="submit">send</button>
+                            <button class="float-right bg-black uppercase" type="submit">send</button>
                         </form>
                     </div>
                 </div>
@@ -192,8 +193,8 @@
         <div id="footer" class="opacity text-center">
             <i class="fa fa-facebook-official opacity-hover"></i>
             <i class="fa fa-instagram opacity-hover"></i>
-            <i class="fa fa-snapchat opacity-hover"></i>
-            <i class="fa fa-pinterest-p opacity-hover"></i>
+            <i class="fa fa-youtube-play opacity-hover"></i>
+            <i class="fa fa-github opacity-hover"></i>
             <i class="fa fa-twitter opacity-hover"></i>
             <i class="fa fa-linkedin opacity-hover"></i>
             <p>Original design by <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm">w3schools</a>

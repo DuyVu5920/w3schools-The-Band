@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 	font-family: lato;
 	font-size: 15px;
 	line-height: 1.5;
@@ -33,6 +34,7 @@ p {
 button {
 	color: #fff;
 	padding: 8px 16px;
+	margin: 16px 0;
 	border: none;
 	cursor: pointer;
 }
@@ -61,6 +63,10 @@ input {
 	width: 100%;
 }
 
+.block {
+	display: block;
+}
+
 .inline-block {
 	display: inline-block;
 }
@@ -69,24 +75,65 @@ input {
 	text-align: center;
 }
 
+.uppercase {
+	text-transform: uppercase;
+}
+
+.text-wide {
+	letter-spacing: 4px;
+}
+
+.text-white {
+	color: #fff !important;
+}
+
+.text-black {
+	color: #000 !important;
+}
+
+.bg-black {
+	background-color: #000;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.bg-teal {
+	background-color: #009688;
+}
+
 .float-right {
 	float: right;
 }
 
-.colx2 {
+.row {
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.col {
 	float: left;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.colx2 {
 	width: 50%;
 }
 
 .colx3 {
-	float: left;
 	width: calc(100% / 3);
 }
 
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: block;
+.shadow {
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .opacity {
@@ -97,22 +144,15 @@ input {
 	opacity: 0.6;
 }
 
-#main {
-}
-
 #header {
 	position: fixed;
 	top: 0;
 	height: var(--header-height);
-	background-color: #000;
 	z-index: 1;
 }
 
 #header a {
 	padding: 0 24px;
-}
-
-#main-menu {
 }
 
 #main-menu li {
@@ -121,15 +161,12 @@ input {
 }
 
 #main-menu li a {
-	color: #fff;
-	display: block;
 	text-decoration: none;
-	text-transform: uppercase;
 	line-height: var(--header-height);
 }
 
 #main-menu > li:hover > a {
-	color: #000;
+	color: #000 !important;
 	background-color: #ccc;
 }
 
@@ -142,16 +179,13 @@ input {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
 	display: none;
 }
 
 #main-menu .sub-menu a {
 	padding: 0 16px;
 	text-transform: capitalize;
-	color: #000;
 	line-height: 38px;
-	background-color: #fff;
 }
 
 #main-menu .sub-menu a:hover {
@@ -160,7 +194,6 @@ input {
 
 #search-icon {
 	line-height: var(--header-height);
-	color: #fff;
 }
 
 #search-icon:hover {
@@ -178,22 +211,13 @@ input {
 #slider .slide-description {
 	position: absolute;
 	padding: 32px 16px;
-	color: #fff;
 	bottom: 10%;
-}
-
-#content {
 }
 
 #content .content-section {
 	margin: 0 auto;
 	max-width: 800px;
 	padding: 64px 16px;
-}
-
-#content .content-heading {
-	text-transform: uppercase;
-	letter-spacing: 4px;
 }
 
 #band-section .band-text {
@@ -205,17 +229,11 @@ input {
 }
 
 #band-section .member-img {
+	margin: auto;
 	width: 60%;
-	margin-bottom: 16px;
-}
-
-#tour-section {
-	color: #fff;
-	background-color: #000;
 }
 
 #tour-section .month-list {
-	background-color: #fff;
 	list-style-type: none;
 	color: #757575;
 	margin-top: 40px;
@@ -228,7 +246,6 @@ input {
 
 #tour-section .month-list span {
 	padding: 0 8px;
-	color: #fff;
 }
 
 #tour-section .sold-out {
@@ -239,36 +256,23 @@ input {
 #tour-section .concert-count {
 	margin-right: 16px;
 	border-radius: 50%;
-	background-color: #000;
 }
 
 #tour-section .concert-list {
 	padding: 32px 0;
-	margin: 0 -8px;
 }
 
 #tour-section .concert {
 	padding: 0 8px;
 	margin-bottom: 16px;
-	color: #000;
-}
-
-#tour-section .city-img {
-	display: block;
 }
 
 #tour-section .concert-detail {
-	background-color: #fff;
 	padding: 0 16px;
 }
 
 #tour-section .concert-date {
 	color: #757575;
-}
-
-#tour-section .booking-btn {
-	background-color: #000;
-	margin-bottom: 16px;
 }
 
 #booking-modal {
@@ -290,17 +294,11 @@ input {
 	left: 0;
 	right: 0;
 	margin: auto;
-	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
-	background-color: #fff;
 }
 
 #booking-modal .modal-header {
 	font-size: 30px;
-	color: #fff;
-	letter-spacing: 4px;
-	text-transform: uppercase;
 	padding: 32px 16px;
-	background-color: #009688;
 }
 
 #booking-modal .modal-content {
@@ -312,8 +310,8 @@ input {
 	position: absolute;
 	top: 0;
 	right: 0;
+	margin: 0;
 	font-size: 24px;
-	background-color: #009688;
 }
 
 #booking-modal .close-modal-btn-top:hover {
@@ -323,8 +321,6 @@ input {
 
 #booking-modal .pay-btn {
 	padding: 16px;
-	margin: 16px 0;
-	background-color: #009688;
 }
 
 #booking-modal .close-modal-btn-bottom {
@@ -342,7 +338,6 @@ input {
 
 #contact-section .contact-detail {
 	font-size: 18px;
-	margin-bottom: 16px;
 }
 
 #contact-section .contact-detail .fa {
@@ -350,18 +345,11 @@ input {
 }
 
 #contact-section .info-input {
-	margin: 0px -8px;
 	margin-bottom: 8px;
 }
 
 #contact-section .info-input > div {
 	padding: 0 8px;
-}
-
-#contact-section .send-btn {
-	background-color: #000;
-	text-transform: uppercase;
-	margin: 16px 0;
 }
 
 #map {
