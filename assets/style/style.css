@@ -409,11 +409,11 @@ input {
 }
 
 @media screen and (max-width: 600px) {
-	.colx2 {
+	.m-w-100 {
 		width: 100%;
 	}
 
-	.colx3 {
+	.m-col-center {
 		width: 100%;
 	}
 
@@ -427,6 +427,10 @@ input {
 
 	.contact-detail {
 		margin-bottom: 16px;
+	}
+
+	.name-input {
+		margin-bottom: 8px;
 	}
 
 	#booking-modal .modal-container {
