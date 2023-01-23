@@ -79,6 +79,10 @@ input {
 	text-transform: uppercase;
 }
 
+.capitalize {
+	text-transform: capitalize;
+}
+
 .text-wide {
 	letter-spacing: 4px;
 }
@@ -101,6 +105,10 @@ input {
 
 .bg-gray {
 	background-color: #ccc;
+}
+
+.bg-dark-gray {
+	background-color: #333;
 }
 
 .bg-teal {
@@ -188,7 +196,6 @@ input {
 
 #main-menu #sub-menu a {
 	padding: 0 16px;
-	text-transform: capitalize;
 	line-height: 38px;
 }
 
@@ -224,6 +231,19 @@ input {
 	text-decoration: none;
 	border-top: 1px solid #333;
 	line-height: var(--header-height);
+}
+
+#mobile-menu #mobile-sub-menu {
+	display: none;
+}
+
+#mobile-menu li:hover #mobile-sub-menu {
+	display: block;
+}
+
+#mobile-menu #mobile-sub-menu a{
+	border-top: 1px solid #ccc;
+	padding: 0 32px;
 }
 
 #slider {
