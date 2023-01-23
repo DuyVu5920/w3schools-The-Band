@@ -99,6 +99,10 @@ input {
 	background-color: #fff;
 }
 
+.bg-gray {
+	background-color: #ccc;
+}
+
 .bg-teal {
 	background-color: #009688;
 }
@@ -192,12 +196,34 @@ input {
 	background-color: #ccc;
 }
 
-#search-icon {
-	line-height: var(--header-height);
+#search-box .search-input {
+	width: auto;
+	padding: 5px;
+	border: none;
 }
 
-#search-icon:hover {
+#search-box .search-icon {
+	height: var(--header-height);
+	margin: 0;
+}
+
+#search-box .search-icon:hover {
 	background-color: #f44336;
+}
+
+#toggle-menu-bar {
+	line-height: var(--header-height);
+	display: none;
+}
+
+#mobile-menu {
+	display: none;
+}
+
+#mobile-menu li a {
+	text-decoration: none;
+	border-top: 1px solid #333;
+	line-height: var(--header-height);
 }
 
 #slider {
@@ -215,7 +241,7 @@ input {
 }
 
 #content .content-section {
-	margin: 0 auto;
+	margin: auto;
 	max-width: 800px;
 	padding: 64px 16px;
 }
@@ -368,7 +394,15 @@ input {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
+	#main-menu {
+		display: none;
+	}
+
+	#toggle-menu-bar {
+		display: inline-block;
+	}
+
 	#booking-modal .modal-container {
 		width: 500px;
 	}

@@ -13,11 +13,11 @@
     <div id="main">
         <div id="header" class="w-100 bg-black">
             <ul id="main-menu" class="inline-block uppercase">
-                <li><a class= "text-white block" href="">home</a></li>
-                <li><a class= "text-white block" href="#band-section">band</a></li>
-                <li><a class= "text-white block" href="#tour-section">tour</a></li>
-                <li><a class= "text-white block" href="#contact-section">contact</a></li>
-                <li><a class= "text-white block" href="">more <i class="fa fa-caret-down"></i></a>
+                <li><a class="text-white block" href="#">home</a></li>
+                <li><a class="text-white block" href="#band-section">band</a></li>
+                <li><a class="text-white block" href="#tour-section">tour</a></li>
+                <li><a class="text-white block" href="#contact-section">contact</a></li>
+                <li><a class="text-white block" href="">more <i class="fa fa-caret-down"></i></a>
                     <ul class="sub-menu bg-white shadow">
                         <li class="w-100"><a class="block text-black" href="">merchandise</a></li>
                         <li class="w-100"><a class="block text-black" href="">extras</a></li>
@@ -25,9 +25,22 @@
                     </ul>
                 </li>
             </ul>
-            <a id="search-icon" class="float-right text-white" href="">
-                <i class="fa fa-search"></i>
+            <div id="search-box" class="float-right">
+                <input class="search-input" type="text" placeholder="Search..." name="search">
+                <button class="search-icon bg-black" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+
+            <a id="toggle-menu-bar" class="text-white" onclick="toggleMobileMenu()">
+                <i class="fa fa-bars"></i>
             </a>
+
+            <ul id="mobile-menu" class="bg-black uppercase">
+                <li><a class="text-white block" onclick="closeMobileMenu()" href="#">home</a></li>
+                <li><a class="text-white block" onclick="closeMobileMenu()" href="#band-section">band</a></li>
+                <li><a class="text-white block" onclick="closeMobileMenu()" href="#tour-section">tour</a></li>
+                <li><a class="text-white block" onclick="closeMobileMenu()" href="#contact-section">contact</a></li>
+            </ul>
+
         </div>
         <div id="slider">
             <div class="slides text-center">
@@ -94,7 +107,8 @@
                     <ul class="month-list bg-white">
                         <li>September <span class="sold-out inline-block text-white">Sold out</span></li>
                         <li>October <span class="sold-out inline-block text-white">Sold out</span></li>
-                        <li>November <span class="concert-count inline-block text-white float-right bg-black">3</span></li>
+                        <li>November <span class="concert-count inline-block text-white float-right bg-black">3</span>
+                        </li>
                     </ul>
                     <div class="concert-list row">
                         <div class="concert text-black col colx3">
@@ -197,7 +211,7 @@
             <i class="fa fa-github opacity-hover"></i>
             <i class="fa fa-twitter opacity-hover"></i>
             <i class="fa fa-linkedin opacity-hover"></i>
-            <p>Original design by <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm">w3schools</a>
+            <p>Original design by <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm" target="_blank">w3schools</a>
             </p>
             <p>Replicated by <a href="https://github.com/DuyVu5920" target="_blank">DuyVu5920</a></p>
         </div>
