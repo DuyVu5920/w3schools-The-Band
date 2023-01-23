@@ -409,6 +409,26 @@ input {
 }
 
 @media screen and (max-width: 600px) {
+	.colx2 {
+		width: 100%;
+	}
+
+	.colx3 {
+		width: 100%;
+	}
+
+	.member-img {
+		padding-bottom: 16px;
+	}
+
+	.concert-detail {
+		width: 100%;
+	}
+
+	.contact-detail {
+		margin-bottom: 16px;
+	}
+
 	#booking-modal .modal-container {
 		margin: 0 12px;
 		width: auto;
