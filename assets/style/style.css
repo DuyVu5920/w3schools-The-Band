@@ -92,7 +92,7 @@ input {
 }
 
 .bg-black {
-	background-color: #000;
+	background-color: #000 !important;
 }
 
 .bg-white {
@@ -174,11 +174,11 @@ input {
 	background-color: #ccc;
 }
 
-#main-menu li:hover .sub-menu {
+#main-menu li:hover #sub-menu {
 	display: block;
 }
 
-#main-menu .sub-menu {
+#main-menu #sub-menu {
 	min-width: 160px;
 	position: absolute;
 	top: 100%;
@@ -186,18 +186,18 @@ input {
 	display: none;
 }
 
-#main-menu .sub-menu a {
+#main-menu #sub-menu a {
 	padding: 0 16px;
 	text-transform: capitalize;
 	line-height: 38px;
 }
 
-#main-menu .sub-menu a:hover {
+#main-menu #sub-menu a:hover {
 	background-color: #ccc;
 }
 
 #search-box .search-input {
-	width: auto;
+	width: initial;
 	padding: 5px;
 	border: none;
 }
@@ -388,7 +388,7 @@ input {
 	font-size: 24px;
 }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 1024px) {
 	#booking-modal .modal-container {
 		width: 600px;
 	}
