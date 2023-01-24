@@ -43,9 +43,3 @@ function openModal() {
 function closeModal() {
 	modal.style.display = "none";
 }
-//close modal when click outside
-window.onclick = function (event) {
-	if (event.target == modal) {
-		closeModal();
-	}
-};
